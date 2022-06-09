@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using File = TagLib.File;
 
 void ReadTags(DirectoryInfo musicDirectory, string outputPath)
 {
@@ -8,7 +9,7 @@ void ReadTags(DirectoryInfo musicDirectory, string outputPath)
     {
         musicDirectory
             .GetFiles("*.mp3")
-            .Select(x => TagLib.File.Create(x.FullName))
+            .Select(x => File.Create(x.FullName))
             .ToList()
             .ForEach(x => sw.WriteLine($"{string.Join(',', x.Tag.Performers)} - {x.Tag.Title}"));
     }
@@ -16,6 +17,8 @@ void ReadTags(DirectoryInfo musicDirectory, string outputPath)
     {
         Console.WriteLine(e);
     }
+
     Console.WriteLine("Finita");
 }
+
 ReadTags(new DirectoryInfo(@"E:\Music"), @"E:\output.txt");

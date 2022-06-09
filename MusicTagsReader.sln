@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MusicUploader.YTMusic", "MusicUploader.YTMusic\MusicUploader.YTMusic.fsproj", "{E8A10C0B-856A-405B-B1FB-24B2873FCC0B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MusicTagsReader.Fs", "MusicTagsReader.Fs\MusicTagsReader.Fs.fsproj", "{E8A10C0B-856A-405B-B1FB-24B2873FCC0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicTagsReader.Cs", "MusicTagsReader.Cs\MusicTagsReader.Cs.csproj", "{3146B0FD-7697-4A2F-B996-C3BF43246C04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{E8A10C0B-856A-405B-B1FB-24B2873FCC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8A10C0B-856A-405B-B1FB-24B2873FCC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8A10C0B-856A-405B-B1FB-24B2873FCC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3146B0FD-7697-4A2F-B996-C3BF43246C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3146B0FD-7697-4A2F-B996-C3BF43246C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3146B0FD-7697-4A2F-B996-C3BF43246C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3146B0FD-7697-4A2F-B996-C3BF43246C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
